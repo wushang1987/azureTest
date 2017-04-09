@@ -32,6 +32,17 @@ module.exports = function(app, config) {
     require(controller)(app);
   });
 
+app.get('/', function (req, res, next) {
+    var dc = {
+        dd: "dd",
+        cc: 'cc',
+    }
+    res.setHeader('Content-Type', 'application/json;charset=utf-8');
+    res.json(dc);
+    // res.sendfile('expressStudy/index.html');
+    // res.text("ddfd");
+});
+
   app.use(function (req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;

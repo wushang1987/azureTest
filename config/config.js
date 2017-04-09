@@ -9,7 +9,7 @@ var config = {
       name: 'azuretest'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/azuretest-development'
+    // db: 'mongodb://localhost/azuretest-development'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: 'azuretest'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/azuretest-test'
+    // db: 'mongodb://localhost/azuretest-test'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: 'azuretest'
     },
     port: process.env.PORT,
-    db: 'mongodb://localhost/azuretest-production'
+    // db: 'mongodb://localhost/azuretest-production'
   }
 };
 
